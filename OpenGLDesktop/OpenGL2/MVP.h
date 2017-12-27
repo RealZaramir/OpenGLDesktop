@@ -46,6 +46,7 @@ public:
 	inline void SetModelMatrix(glm::mat4 modelmatrix) { this->ModelMatrix = modelmatrix; }
 	inline void SetMVP(glm::mat4 given_mvp) { this->mvp = given_mvp; }
 
+	inline glm::mat4 recalculateMatrix() { return this->mvp = this->ProjectionMatrix * this->ViewMatrix * this->ModelMatrix; }
 
 	inline glm::mat4 calculateMVP() { return ProjectionMatrix * ViewMatrix * ModelMatrix; }
 private:

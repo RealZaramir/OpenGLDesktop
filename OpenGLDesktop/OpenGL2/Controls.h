@@ -27,17 +27,17 @@ public:
 		}
 	void CheckControls(GLFWwindow* windowLive) {		
 
-		if (glfwGetKey(windowLive, GLFW_KEY_RIGHT) == GLFW_PRESS) this->yRot += 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_UP) == GLFW_PRESS) this->xRot += 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_LEFT) == GLFW_PRESS) this->yRot -= 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_DOWN) == GLFW_PRESS) this->xRot -= 0.001f;			//IDEA - USE TRANSFORM.H TO SET POS AND ROT
+		if (glfwGetKey(windowLive, GLFW_KEY_RIGHT) == GLFW_PRESS) this->yRot += 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_UP) == GLFW_PRESS) this->xRot += 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_LEFT) == GLFW_PRESS) this->yRot -= 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_DOWN) == GLFW_PRESS) this->xRot -= 0.005f;			//IDEA - USE TRANSFORM.H TO SET POS AND ROT
 
-		if (glfwGetKey(windowLive, GLFW_KEY_D) == GLFW_PRESS) this->yPos -= 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_W) == GLFW_PRESS) this->xPos += 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_A) == GLFW_PRESS) this->yPos += 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_S) == GLFW_PRESS) this->xPos -= 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_Q) == GLFW_PRESS) this->zPos += 0.001f;
-		if (glfwGetKey(windowLive, GLFW_KEY_E) == GLFW_PRESS) this->zPos -= 0.001f;
+		if (glfwGetKey(windowLive, GLFW_KEY_D) == GLFW_PRESS) this->yPos -= 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_W) == GLFW_PRESS) this->xPos += 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_A) == GLFW_PRESS) this->yPos += 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_S) == GLFW_PRESS) this->xPos -= 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_Q) == GLFW_PRESS) this->zPos += 0.005f;
+		if (glfwGetKey(windowLive, GLFW_KEY_E) == GLFW_PRESS) this->zPos -= 0.005f;
 		if (glfwGetKey(windowLive, GLFW_KEY_P) == GLFW_PRESS) {
 			enablePolygonMode();
 			pressedKeys[10] = 'P';

@@ -10,5 +10,5 @@ out vec3 fragmentColor;
 void main(){
 	fragmentColor = vertexColor;
 	gl_Position =  mvp * transformation *  vec4(vertexPosition_modelspace, 1);
-	gl_PorintSize = 5.0;
+	gl_PointSize = 5.0;
 }

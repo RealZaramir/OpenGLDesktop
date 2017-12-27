@@ -128,10 +128,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="OpenGL2\Fragment_Shader.glsl">
+    <None Include="Fragment_Shader.glsl">
       <Filter>OpenGL2</Filter>
     </None>
-    <None Include="OpenGL2\Vertex_Shader.glsl">
+    <None Include="Vertex_Shader.glsl">
       <Filter>OpenGL2</Filter>
     </None>
   </ItemGroup>

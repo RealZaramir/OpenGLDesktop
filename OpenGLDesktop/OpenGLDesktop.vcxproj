@@ -177,9 +177,9 @@
     <ClCompile Include="OpenGL2\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OpenGL2\Fragment_Shader.glsl" />
-    <None Include="OpenGL2\Vertex_Shader.glsl" />
+    <None Include="Fragment_Shader.glsl" />
     <None Include="packages.config" />
+    <None Include="Vertex_Shader.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

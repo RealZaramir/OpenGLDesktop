@@ -98,7 +98,7 @@ void OpenGL()
 	glBindBuffer(GL_ARRAY_BUFFER, colorbuffer);
 	glBufferData(GL_ARRAY_BUFFER, color->GetColorSize(), color->GetColorData(), GL_STATIC_DRAW);
 
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(0.5f, 0.5f, 0.5f, 0.0f);
 	MVP* mvp = new MVP;
 	GLuint MatrixID = glGetUniformLocation(programID, "mvp");
 
@@ -123,7 +123,9 @@ void OpenGL()
 
 	startingSequence->StartStartingSequence(TransformationID, MatrixID, MVPMatrix, colorbuffer, &color, windowLive, testtrans);
 
-	color->setCustomColor(1, 1, 1, popSize);
+	color->setCustomColor(1.0, 1.0, 1.0, popSize * 2);		//investigate
+	mvp->SetViewMatrix(glm::lookAt(glm::vec3(5.0f, 0.0f, 0.0f), glm::vec3(0.0f), glm::vec3(0.0f, 1.0f, 0.0f)));
+	MVPMatrix = mvp->recalculateMatrix();
 
 	do {
 		Transformation.SetPos(glm::vec3(controls->GetzPos(), controls->GetxPos(), controls->GetyPos()));
